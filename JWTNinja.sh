@@ -73,7 +73,7 @@ while true; do
             ;;
         3)
             read -p "Enter JWT Token: " JWT_TOKEN
-            execute_command "python jwt_tool.py \"$JWT_TOKEN\" -C -d /usr/share/wordlists/rockyou.txt" "Crack Token Password"
+            execute_command "python jwt_tool.py \"$JWT_TOKEN\" -C -d {path}" "Crack Token Password"
             ;;
         4)
             read -p "Enter JWT Token: " JWT_TOKEN
